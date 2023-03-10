@@ -20,7 +20,7 @@ Additionally it exposes _$rack_ variable which allows you to make simulated HTTP
 
 ## Installation
 
-    gem install racksh
+    gem install spinels-racksh
 
 ## Usage
 
@@ -54,7 +54,7 @@ Specifying Rack environment (default is development):
     >> $rack.get "/"
     => #<Rack::MockResponse:0xb68fa7bc @body="<html>...", @headers={"Content-Type"=>"text/html", "Content-Length"=>"1812"}, @status=200, ...
 
-_$rack_ variable contains following methods (thanks to [rack-test](http://github.com/brynary/rack-test) gem):
+_$rack_ variable contains following methods (thanks to [rack-test](http://github.com/rack/rack-test) gem):
 
     # make GET request
     $rack.get uri, params, env
@@ -139,10 +139,6 @@ If you already opened irb and you want racksh functionality just run following:
     require 'racksh/irb'
 
 It will initialize racksh and load rack app. From now on you can use _$rack_.
-
-## Bugs & feature requests
-
-Please report bugs and/or feature requests on the github issue tracker for the project located [here](http://github.com/sickill/racksh/issues).
 
 ## Authors
 
