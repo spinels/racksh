@@ -1,11 +1,11 @@
-require 'rubygems'
-require 'rake'
-require 'rubygems/package_task'
+# frozen_string_literal: true
 
-task :default => [:repackage]
+require "rake/testtask"
 
-spec = eval(File.read('racksh.gemspec'))
-
-Gem::PackageTask.new(spec) do |pkg|
-  pkg.need_tar = true
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList["test/*_test.rb"]
+  t.options = "--verbose=normal" unless ENV.key?("TESTOPTS")
 end
+
+task default: :test
