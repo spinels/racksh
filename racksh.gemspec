@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.license = 'MIT'
   s.homepage = %q{http://github.com/spinels/racksh}
   s.summary = %q{Console for any Rack based ruby web app}
-  s.executables = ["racksh"]
+  s.executables = ["racksh", "spinels-racksh"]
   s.files = Dir["bin/*"] + Dir["lib/**/*.rb"] + ["README.md", "CHANGELOG.md"]
   s.add_dependency 'rack', '>= 1.0'
   s.add_dependency 'rack-test', '>= 0.5'

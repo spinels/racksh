@@ -1,3 +1,7 @@
+## 1.0.4 / 2024-02-11
+
+* added `bin/spinels-racksh` to list of executables in gemspec (for `bundle exec spinels-racksh`)
+
 ## 1.0.3 / 2024-02-11
 
 * added `bin/spinels-racksh` (for `bundle exec spinels-racksh`)
