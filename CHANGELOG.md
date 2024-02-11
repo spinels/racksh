@@ -1,3 +1,7 @@
+## 1.0.2 / 2024-02-11
+
+* added `bin/spinels-racksh` (for `bundle exec spinels-racksh`)
+
 ## 1.0.1 / 2023-03-11
 
  * use File.exist? because Ruby 3.2 does not have File.exists?
