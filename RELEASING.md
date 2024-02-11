@@ -1,7 +1,8 @@
 # Releasing
 
+Prerequisite: https://github.com/svenfuchs/gem-release
+
 ```bash
-# Prerequisite, https://github.com/svenfuchs/gem-release
 gem install gem-release
 
 # update CHANGELOG, make commit
@@ -10,3 +11,5 @@ gem install gem-release
 # patch version increase by default, use --version to change
 gem bump --tag --push
 ```
+
+GitHub Actions pushes to https://rubygems.org/gems/spinels-racksh
