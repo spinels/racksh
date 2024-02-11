@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/spinels/racksh}
   s.summary = %q{Console for any Rack based ruby web app}
   s.executables = ["racksh"]
-  s.files = Dir["bin/*"] + Dir["lib/**/*.rb"] + ["README.markdown", "CHANGELOG.txt"]
+  s.files = Dir["bin/*"] + Dir["lib/**/*.rb"] + ["README.markdown", "CHANGELOG.md"]
   s.add_dependency 'rack', '>= 1.0'
   s.add_dependency 'rack-test', '>= 0.5'
 end
